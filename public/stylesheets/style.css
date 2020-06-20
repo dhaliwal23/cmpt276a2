@@ -1,0 +1,149 @@
+body{
+    
+    border: solid rgb(27, 164, 250) ;
+    border-radius: 25px;
+    border-width: 8px;
+   border-style: groove;
+    padding: 25px;
+    background-color: rgb(240, 244, 245)
+
+}
+
+#Titlep{
+    font-family: cursive;
+    font-size: 45px;
+    position: relative;
+    left: 500px;
+}
+
+
+
+
+#Addheader{
+    font-size: xx-large;
+    font-family: cursive;
+    
+}
+#AddingCat{
+    background-color: lightskyblue;
+    border: solid black;
+    border-radius: 25px;
+    padding:25px;
+    margin-bottom: 15px;
+}
+
+#Deleteheader{
+    font-size: xx-large;
+    font-family: cursive;
+}
+#DeletingCat{
+    border: solid black;
+    border-radius: 25px;
+    background-color: lightskyblue;
+    padding:25px;
+    margin-bottom: 15px;
+}
+
+#Updateheader{
+    font-size: xx-large;
+    font-family: cursive;
+}
+#UpdateCat{
+    border: solid black;
+    border-radius: 25px;
+    background-color: lightskyblue;
+    padding:25px;
+    margin-bottom: 15px;
+}
+
+#Press{
+    background-color: lightskyblue;
+    border: solid black;
+    padding: 25px;
+    border-radius: 25px;
+    font-size: x-large;
+    font-family: cursive;
+    position: relative;
+    left: 350px;
+}
+#Press:hover{
+    cursor: pointer;
+    background-color: rgb(200, 231, 250);
+}
+
+#viewp{
+    font-family: cursive;
+    font-size: xx-large;
+    position: relative;
+    bottom: 100px;
+    width: 300px;
+}
+
+#addbutton{
+    background-color: lightskyblue;
+    border: solid black;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: large;
+    font-family: cursive;
+}
+#addbutton:hover{
+    cursor: pointer;
+    background-color: rgb(200, 231, 250);
+}
+
+#deletebutton{
+    background-color: lightskyblue;
+    border: solid black;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: large;
+    font-family: cursive;
+   
+}
+
+#deletebutton:hover{
+    cursor: pointer;
+    background-color: rgb(200, 231, 250);
+}
+
+#updatebutton{
+    background-color: lightskyblue;
+    border: solid black;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: large;
+    font-family: cursive;  
+    position: relative; 
+    left:140px;
+   
+}
+
+#updatebutton:hover{
+    cursor: pointer;
+    background-color: rgb(200, 231, 250);
+
+}
+
+input[type=text]{
+    border: solid black;
+    width: 155px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+input[type=text]:hover{
+background-color: rgb(240, 247, 252);
+}
+
+input[type=number]{
+    border: solid black;
+    width: 155px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+input[type=number]:hover{
+    background-color: rgb(240, 247, 252);
+    }

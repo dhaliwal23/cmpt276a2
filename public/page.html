@@ -3,28 +3,56 @@
     <head>
         <meta chaset="utf-8">
         <title>webpage</title>
+        <link rel="stylesheet"href="./stylesheets/style.css">
     </head>
     <body>
         <main>
-            <form class="" action="/adduser" method="post">
-                <input type="text" name="uid" value="" placeholder="Uid"> <br>
-                <input type="text" name="fname" value="" placeholder="fname"> <br>
-                <input type="number" name="age" value="" placeholder="Age"> <br>
-                <input type="submit" value="SUBMIT">
+            <p id="Titlep">Welcome</p>
+            <div id="AddingCat">
+            <p id="Addheader">Add New Person</p>
+           
+            <form  name= "Addform" class="" action="/adduser" method="post" onsubmit="return giveres()">
+                Name: <input type="text" name="name" value="" placeholder="Name"> 
+                Size: <input type="number" name="size" value=0 placeholder="Size"> 
+                Height: <input type="number" name="height"  value=0 placeholder="Height"> <br>
+                Type: <input type="text" name="type" value="" placeholder="Type"> 
+                Hair Color: <input type="text" name="hair_color" value="" placeholder="Hair Color"> 
+                Eye Color: <input type="text" name="eye_color" value="" placeholder="Eye Color"> 
+                <input id="addbutton"type="submit" value="ADD PERSON">
             </form>
-            <form class="" action="/q" method="post">
-                <input type="text" name="uid" value="" placeholder="Uid"> <br>
-                <input type="submit" value="SUBMIT">
+        </div>
+        
+        <div id="DeletingCat">
+            <p id=Deleteheader>Delete Person</p>
+            <p style="font-family: cursive;">Enter Name of person to Delete</p>
+            <form name="Deleteform" class="" action="/deleteuser" method="post" onsubmit="return giveresdel()">
+               Name: <input type="text" name="name" value="" placeholder="Name"> 
+                <input id="deletebutton" type="submit" value="Delete Person">
             </form>
-            <form class="" action="/p" method="post">
-                <input type="text" name="uid" value="" placeholder="Uid"> <br>
-                <input type="text" name="fname" value="" placeholder="fname"> <br>
-                <input type="number" name="age" value="" placeholder="Age"> <br>
-                <input type="submit" value="SUBMIT">
+        </div>
+        <div id="UpdateCat">
+            <p id="Updateheader">Update Person</p>
+            <p style="font-family: cursive;">Enter Name of person to Update</p>
+            <form name="Updateform" class="" action="/updateuser" method="post" onsubmit="return giveresupd()"">
+               Name: <input type="text" name="name" value="" placeholder="Name"> <br>
+                <p style="font-family: cursive;">Enter</p>
+                Size: <input type="number" name="size" value=0 placeholder="Size"> 
+                Height: <input type="number" name="height" value=0 placeholder="Height"> 
+                Type: <input type="text" name="type" value="" placeholder="Type"> <br>
+                Hair Color: <input type="text" name="hair_color" value="" placeholder="Hair Color"> 
+                Eye Color: <input type="text" name="eye_color" value="" placeholder="Eye Color"> 
+                <input id="updatebutton" type="submit" value="Update Person">
             </form>
+           </div>
+            <form class="" action="/Listpeople" method="GET">
+               
+                <input id="Press" type="submit" value="View People">
+            </form>
+            <p id="viewp"></pid>To View People Click</p>
             
         </main>
         
-        
+        <script type="text/javascript" src="./script.js">
+        </script>
     </body>
 </html>

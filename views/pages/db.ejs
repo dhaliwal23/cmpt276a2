@@ -4,16 +4,27 @@
   <% include ../partials/header.ejs %>
 </head>
 
-<body>
+<body style="background-color: rgb(240, 244, 245); border: solid  rgb(27, 164, 250); margin: 16px; border-radius: 25px; border-style: groove; border-width: 7px;">
 
 
-
+<script>var t=4;</script>
 <div class="container">
-<h2>Database Results</h2>
+<h2 style="font-family: cursive; font-weight: bold;">People</h2>
+<h3 style="font-family: cursive;">Information about people are stored as [Name, Size, Height, Type, Hair Color, Eye Color]</h1>
 
 <ul>
     <% rows.forEach(function(r) { %>
-        <li><%= r.uid %> <%= r.age %> <%= r.fname %> </li>
+      
+      
+        <li > <%= r.name %>, <%= r.size %>, <%= r.height %>, <%= r.type %>, <%= r.hair_color %>, <%=r.eye_color %> </li>
+       
+        <table style="border: solid black; background-color: rgb(122, 198, 245);">
+          <tr>
+          <td style="padding:25px"><%= r.name %></td>
+          </tr>
+        </table>
+        <script>document.write(j)</script>
+        
     <% }); %>
 </ul>
 
